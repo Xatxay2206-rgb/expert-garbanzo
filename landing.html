@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IT Security Notification</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: #e9f1fb;
+        color: #333;
+    }
+
+    .header {
+        background: #0d47a1;
+        color: white;
+        padding: 20px 40px;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .header img {
+        height: 42px;
+    }
+
+    .container {
+        max-width: 450px;
+        background: white;
+        margin: 50px auto;
+        padding: 32px;
+        border-radius: 12px;
+        box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #0d47a1;
+        margin-bottom: 8px;
+    }
+
+    .alert-box {
+        background: #e3f2fd;
+        border-left: 5px solid #1565c0;
+        padding: 12px 14px;
+        border-radius: 6px;
+        margin: 15px 0 25px;
+        color: #0d47a1;
+        font-size: 14.5px;
+        line-height: 1.5em;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin: 12px 0;
+        border-radius: 6px;
+        border: 1px solid #b0c4de;
+        font-size: 15px;
+    }
+
+    .btn {
+        margin-top: 14px;
+        width: 100%;
+        padding: 12px;
+        background: #1976d2;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .btn:hover {
+        background: #1565c0;
+    }
+
+    .note {
+        background: #fff4ce;
+        border-left: 5px solid #d4a000;
+        padding: 10px;
+        border-radius: 6px;
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 13px;
+        color: #666;
+        margin-top: 25px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <imgsrc="https://via.placeholder.com/160x48?text=LOGO">
+    ฝ่ายเทคโนโลยีสารสนเทศ (IT Department)
+</div>
+
+<div class="container">
+
+    <h2>การแจ้งเตือนความปลอดภัย</h2>
+
+    <div class="alert-box">
+        • ระบบตรวจพบการ <b>ล็อกอินผิดปกติ</b> จากอุปกรณ์ที่ไม่รู้จัก<br>
+        • จำเป็นต้องทำการ <b>ตรวจสอบข้อมูลบัญชีผู้ใช้</b><br>
+        • หากสงสัยว่ามีการเข้าถึงโดยไม่ได้รับอนุญาต โปรดติดต่อฝ่าย IT ทันที
+    </div>
+
+    <pstyle="margin-top: 0;">
+        ตัวอย่างแบบฟอร์มด้านล่างนี้จัดทำขึ้นเพื่อการอบรมด้านความปลอดภัยไซเบอร์เท่านั้น
+    </p>
+
+    <!-- ฟอร์มฝึกสังเกต (ไม่มีการส่งข้อมูลออก) -->
+    <form onsubmit="alert('นี่เป็นแบบจำลองเพื่อการอบรมเท่านั้น — ไม่มีการส่งข้อมูลใด ๆ'); return false;">
+        <input type="text" placeholder="ชื่อผู้ใช้งาน (ตัวอย่าง)" required>
+        <input type="password" placeholder="รหัสผ่าน (ตัวอย่าง)" required>
+        <button class="btn" type="submit">ยืนยัน (สำหรับการอบรม)</button>
+    </form>
+
+    <div class="note">
+        ⚠ ฟอร์มนี้เป็นแบบฝึกสังเกตในการอบรม Cybersecurity Awareness  
+        ไม่มีการเก็บ/ส่งข้อมูลของพนักงานใด ๆ ทั้งสิ้น
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2025 Your Organization — IT Security Division (Training Use Only)
+</div>
+
+</body>
+</html>
